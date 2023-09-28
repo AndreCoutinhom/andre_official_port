@@ -568,8 +568,12 @@ span {
 }
 
 .contact {
-    min-width: auto;
-    padding-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
 }
 
 .contact h2 {
