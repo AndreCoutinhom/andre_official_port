@@ -578,6 +578,9 @@ span {
 
 .contact h2 {
     display: inline-block;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
     left: 50%;
     transform: translateX(-50%);
 }
