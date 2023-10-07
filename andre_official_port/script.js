@@ -28,11 +28,6 @@ window.onscroll = () => {
             // active sections for animation on scroll
             sec.classList.add('show-animate');
         }
-        // if wants to use animation that repeats on scroll use this
-        //else {
-          //  sec.classList.remove('show-animate');
-  
-        //}
     });
     // sticky header
     let header = document.querySelector('header');
@@ -43,11 +38,11 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active'); 
 
-    // animation footer on scroll
-window.addEventListener('scroll', function() {
-    let footer = document.querySelector('footer');
-    footer.classList.toggle('show-animate', window.innerHeight + window.scrollY >= document.body.offsetHeight);
-});
+   // animation footer on scroll
+   let footer = document.querySelector('footer');
+
+   footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
+}
 
 
  
